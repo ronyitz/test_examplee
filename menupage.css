@@ -1,0 +1,202 @@
+body,
+html {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+	animation: fadein 0.5s;
+	-moz-animation: fadein 0.5s;
+	/* Firefox */
+	-webkit-animation: fadein 0.5s;
+	/* Safari and Chrome */
+	-o-animation: fadein 0.5s;
+	/* Opera */
+
+}
+
+@keyframes fadein {
+	from {
+		bottom: 0px;
+		opacity: 0;
+	}
+
+	to {
+		bottom: 30px;
+		opacity: 1;
+	}
+}
+
+@keyframes fadeout {
+	from {
+		bottom: 30px;
+		opacity: 1;
+	}
+
+	to {
+		bottom: 0px;
+		opacity: 0;
+	}
+}
+
+
+
+#tableButtonsMenu {
+	border-collapse: separate;
+	border-spacing: 15px 15px;
+	text-align: center;
+	padding: 0px;
+	border-radius: 4px;
+}
+
+#PniyotPtuchotButton{
+	text-align: center;
+}
+
+.buttonMenu {
+	/* margin: 0; */
+	display: block;
+	height: 80px;
+	width: 100%;
+	font-size: 25px;
+	cursor: pointer;
+	border: 1px solid rgb(255, 255, 255);
+	background-image: linear-gradient(to top left, #ff7300, rgb(250, 172, 109));
+	color: white;
+	border-radius: 9px;
+	align-items: center;
+
+	/* display: block; */
+	/* box-shadow: 2px 3px #999; */
+
+	position: relative;
+
+	
+}
+
+
+header {
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+	padding: 18px 10px;
+	font-family: 'Arial';
+}
+
+header a {
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	line-height: calc(21px + .9vw);
+	font-size: calc(21px + .9vw);
+	white-space: nowrap;
+}
+
+.buttonMenu1{
+	/* margin: 50px 50px 50px 50px; */
+	/* margin: 0; */
+	display: block;
+	height: 150px;
+	width: 100%;
+	font-size: 30px;
+	cursor: pointer;
+	border: 1px solid rgb(255, 255, 255);
+	background-image: linear-gradient(to top left, #ff7300, rgb(250, 172, 109));
+	color: white;
+	border-radius: 18px;
+	align-items: center;
+
+	display: block;
+	box-shadow: 4px 9px #999;
+	/* text-align: center; */
+	/* margin-top: 20px; */
+	/* display: inline-block; */
+	position: relative;
+	/* display: inline-block; */
+	/* text-decoration: none; */
+}
+
+.buttonMenu:active {
+	background-image: linear-gradient(to top left, #ff7300, rgb(250, 172, 109));
+	box-shadow: 4px 5px #666;
+	transform: translateY(4px);
+}
+
+
+
+.notification {
+	background-color: #555;
+	color: white;
+	text-decoration: none;
+	padding: 15px 26px;
+	position: relative;
+	display: inline-block;
+	border-radius: 2px;
+  }
+  
+  .notification:hover {
+	background: red;
+  }
+  
+
+  .buttonMenu .badge {
+	border: 1px solid white;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 30px;
+	font-size: 20px;
+	/* transform: translate(-15px,-15px); */
+	/* transform: translateX(-15px); */
+
+	translate: ();
+	border-radius: 5px;
+	background-color: rgb(200, 63, 63);
+	color: white;
+  }
+
+
+
+
+@keyframes fadein {
+	from {
+		bottom: 0px;
+		opacity: 0;
+	}
+
+	to {
+		bottom: 30px;
+		opacity: 1;
+	}
+}
+
+@keyframes fadeout {
+	from {
+		bottom: 30px;
+		opacity: 1;
+	}
+
+	to {
+		bottom: 0px;
+		opacity: 0;
+	}
+}
+
+.containerEnterPage {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	font-family: 'Arial';
+	text-align: center;
+}
+
+
+/* On screens that are 600px wide or less, the background color is olive */
+
+/* @media screen and (max-width: 600px) {
+	.buttonMenu {
+		font-size: calc(22px + .9vw);
+	}
+} */

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <meta charset="UTF-8">
+      <title>מערכת שקנאי</title>
+      <meta name="viewport" content="initial-scale=1.0, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="menupage.css">
+      <link rel="stylesheet" href="all.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+
+
+   </head>
+
+
+   <body onload="loadpage()">
+      <header>
+         <a>מערכת שקנאי</a>
+      </header>
+
+
+
+      <div style="width: 100%; padding: 5px 20px 20px 20px;">
+         <span id="numofPniyot"
+            style="z-index: 10; position: relative; top: 10px; right: 10px;  background-color: rgb(209, 70, 77); color: white; padding: 8px; border-radius: 5px;">ג</span>
+
+         <button id="PniyotPtuchotButton" class="buttonMenu">פניות פתוחות</button>
+      </div>
+
+
+
+      <div style=" width: 100%; padding: 0px 20px 20px 20px;">
+         <button id="NewPniyaButton" class="buttonMenu">שליחת הודעה</button>
+      </div>
+
+
+
+      <div style="z-index: 9999; " class="modal fade" id="myModal22" role="dialog"
+         aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+         <div class="modal-dialog" style=" margin: 0; width:90%; top:20%;  border:1px solid green; position: absolute;
+         float: left;
+         left: 50%;
+         top: 40%;
+         transform: translate(-50%, -50%);">
+            <div class="modal-content" style="border-radius: 6px; ">
+
+
+
+
+               <div id="ShmiraKoteret1"
+                  style="background-color: #ebebeb; border-radius: 5px 5px 0px 0px;   padding: 20px 10px 20px 10px; border-bottom: 1px solid rgb(223, 220, 220); ">
+                  <h5 style="  color:#ffffff; font-weight: bold; text-align: center; font-size: 18px; "
+                     class="modal-title" id="ModalAddingPicKoteret">יציאה מהמערכת</h5>
+               </div>
+
+
+               <div style=" margin-top: 20px; margin-bottom: 20px; text-align: center;">
+                  האם אתה בטוח שברצונך לצאת?
+               </div>
+
+               <div id="ShmiraShinuim1"
+                  style=" background-color: #ebebeb; border-radius: 0px 0px 5px 5px; padding: 10px; text-align: center;">
+                  <button onclick="backToRashut()" id="modalButtonKen" data-dismiss="modal" type="button"
+                     style="border-radius: 4px; border: 1px rgb(143, 143, 143) solid;  padding: 4px 10px 4px 10px ;">כן</button>
+                  <button id="modalButtonLo" data-dismiss="modal" type="button"
+                     style="border-radius: 4px; border: 1px rgb(143, 143, 143) solid;  padding: 4px 10px 4px 10px ;">לא</button>
+
+               </div>
+
+
+
+            </div>
+         </div>
+      </div>
+
+
+      <div id='snackbar'>שם משתמש או סיסמא אינם נכונים, נסה שנית</div>
+
+      <script src="menupage.js"></script>
+      <script src="allvars.js"></script>
+   </body>
+
+</html>
